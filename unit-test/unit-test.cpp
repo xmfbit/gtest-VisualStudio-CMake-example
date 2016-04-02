@@ -1,13 +1,20 @@
-#include <stdio.h>
+/*************************************************************************
+	> File Name: unit-test.cpp
+	> Author: 
+	> Mail: 
+	> Created Time: 2016年04月02日 星期六 13时27分37秒
+ ************************************************************************/
+
+#include "gtest/gtest.h"
 #include "add.h"
-#include <gtest/gtest.h>
 
-/* this is a test that can pass*/
-TEST(AddTest, CanPass) {
-	  EXPECT_EQ(1, add(0, 1));
+TEST(AddTest, Right) {
+    int a = 1, b = 2;
+    EXPECT_EQ(add(a, b), a + b);
 }
 
-/* make a tast that can not pass*/
-TEST(ADDTest, CannotPass) {
-	EXPECT_EQ(1, add(0, 0));
+TEST(AddTest, Wrong) {
+    int a = 1, b = 2;
+    EXPECT_EQ(add(a, b), a + b + 1);
 }
+

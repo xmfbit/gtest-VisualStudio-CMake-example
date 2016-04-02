@@ -1,4 +1,14 @@
-#ifndef ADD_H
-#define ADD_H
-int add(int, int);
+/*************************************************************************
+	> File Name: add.h
+	> Author: 
+	> Mail: 
+	> Created Time: 2016年04月02日 星期六 13时20分34秒
+ ************************************************************************/
+
+#ifndef _ADD_H
+#define _ADD_H
+
+int add(int a, int b);
+
 #endif
+
